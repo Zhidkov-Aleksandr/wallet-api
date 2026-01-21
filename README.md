@@ -1,3 +1,7 @@
+<img width="1536" height="1024" alt="Image 21 янв  2026 г , 16_39_25" src="https://github.com/user-attachments/assets/afff7b5d-599a-44d9-8a34-18f4c0b17348" />
+
+
+
 # Wallet API Application
 
 REST-сервис для управления балансом кошельков.
