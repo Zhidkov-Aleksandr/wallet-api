@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-wallet-table
+      author: wallet-api
+      changes:
+        - createTable:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: balance
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: version
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: created_at
+                  type: timestamp
+
+              - column:
+                  name: updated_at
+                  type: timestamp
