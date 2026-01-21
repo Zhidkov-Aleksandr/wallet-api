@@ -16,15 +16,31 @@ public class WalletOperationRequest {
     @Positive
     private long amount;
 
+    // нужен для Jackson
+    public WalletOperationRequest() {
+    }
+
     public UUID getWalletId() {
         return walletId;
+    }
+
+    public void setWalletId(UUID walletId) {
+        this.walletId = walletId;
     }
 
     public OperationType getOperationType() {
         return operationType;
     }
 
+    public void setOperationType(OperationType operationType) {
+        this.operationType = operationType;
+    }
+
     public long getAmount() {
         return amount;
+    }
+
+    public void setAmount(long amount) {
+        this.amount = amount;
     }
 }
