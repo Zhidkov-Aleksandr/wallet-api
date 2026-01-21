@@ -32,3 +32,20 @@ databaseChangeLog:
               - column:
                   name: updated_at
                   type: timestamp
+
+  - changeSet:
+      id: insert-demo-wallet
+      author: wallet-api
+      changes:
+        - insert:
+            tableName: wallet
+            columns:
+              - column:
+                  name: id
+                  value: "00000000-0000-0000-0000-000000000001"
+              - column:
+                  name: balance
+                  valueNumeric: 1000
+              - column:
+                  name: version
+                  valueNumeric: 0

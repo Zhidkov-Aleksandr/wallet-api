@@ -28,6 +28,7 @@ public class Wallet {
     public Wallet(UUID id, long balance) {
         this.id = id;
         this.balance = balance;
+        this.version = 0;
     }
 
     @PrePersist

@@ -1,0 +1,28 @@
+### Проверка баланса демонстрационного кошелька
+GET http://localhost:8080/api/v1/wallets/00000000-0000-0000-0000-000000000001
+
+### Пополнение демонстрационного кошелька
+POST http://localhost:8080/api/v1/wallet
+Content-Type: application/json
+
+{
+  "walletId": "00000000-0000-0000-0000-000000000001",
+  "operationType": "DEPOSIT",
+  "amount": 1000
+}
+
+### Повторная проверка баланса
+GET http://localhost:8080/api/v1/wallets/00000000-0000-0000-0000-000000000001
+
+### Списание средств
+POST http://localhost:8080/api/v1/wallet
+Content-Type: application/json
+
+{
+  "walletId": "00000000-0000-0000-0000-000000000001",
+  "operationType": "DEPOSIT",
+  "amount": 500
+}
+
+### Финальная проверка баланса
+GET http://localhost:8080/api/v1/wallets/00000000-0000-0000-0000-000000000001
