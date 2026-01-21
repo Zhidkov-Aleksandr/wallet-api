@@ -48,3 +48,34 @@ docker compose up --build -d
 # Приложение будет доступно по адресу:
 # http://localhost:8080
 ```
+
+## API
+
+### Изменение баланса кошелька
+
+```bash
+POST /api/v1/wallet
+
+{
+  "walletId": "UUID",
+  "operationType": "DEPOSIT | WITHDRAW",
+  "amount": 1000
+}
+```
+
+DEPOSIT — пополнение кошелька
+WITHDRAW — списание средств
+
+При недостатке средств операция отклоняется.
+
+### Получение баланса кошелька
+```bash
+GET /api/v1/wallets/{walletId}
+```
+Пример ответа:
+```bash
+{
+  "walletId": "11111111-1111-1111-1111-111111111111",
+  "balance": 1500
+}
+```
