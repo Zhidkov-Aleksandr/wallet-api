@@ -20,7 +20,7 @@ Content-Type: application/json
 
 {
   "walletId": "00000000-0000-0000-0000-000000000001",
-  "operationType": "DEPOSIT",
+  "operationType": "WITHDRAW",
   "amount": 500
 }
 
