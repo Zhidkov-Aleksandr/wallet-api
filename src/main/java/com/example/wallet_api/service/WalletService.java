@@ -18,6 +18,7 @@ public class WalletService {
     private final WalletRepository walletRepository;
 
     public WalletService(WalletRepository walletRepository) {
+
         this.walletRepository = walletRepository;
     }
 
