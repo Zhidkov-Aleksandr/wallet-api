@@ -39,20 +39,24 @@ public class Wallet {
 
     @PreUpdate
     void onUpdate() {  // автоматически заполняет дату последнего обновления при каждом изменении сущности.
+
         updatedAt = LocalDateTime.now();
     }
 
     // геттеры и сеттеры для доступа к полям
 
     public UUID getId() {
+
         return id;
     }
 
     public long getBalance() {
+
         return balance;
     }
 
     public void setBalance(long balance) {
+
         this.balance = balance;
     }
 }

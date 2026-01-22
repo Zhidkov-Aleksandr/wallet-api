@@ -13,10 +13,12 @@ public class WalletBalanceResponse {
     }
 
     public UUID getWalletId() {
+
         return walletId;
     }
 
     public long getBalance() {
+
         return balance;
     }
 }
