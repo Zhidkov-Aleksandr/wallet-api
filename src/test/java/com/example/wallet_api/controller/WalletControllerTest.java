@@ -86,7 +86,7 @@ class WalletControllerTest {
                 .andExpect(jsonPath("$.message").value("INSUFFICIENT_FUNDS"));
     }
 
-    // 5️⃣ тест: "кривой" JSON
+    // тест: "кривой" JSON
     @Test
     void shouldReturnBadRequestForInvalidJson() throws Exception {
 
